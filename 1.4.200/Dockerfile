@@ -8,7 +8,7 @@ FROM openjdk:11 AS builder
 # MAINTAINER Changsu Im <imcxsu@gmail.com>
 LABEL maintainer="imcxsu@gmail.com"
 
-ENV DOWNLOAD http://www.h2database.com/h2-2019-03-13.zip
+ENV DOWNLOAD http://www.h2database.com/h2-2019-10-14.zip
 
 RUN curl ${DOWNLOAD} -o h2.zip \
     && unzip h2.zip -d /opt/ \
