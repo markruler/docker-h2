@@ -14,6 +14,7 @@ Dockerized H2 database service.
 [Automated builds](https://hub.docker.com/r/markruler/h2/tags) on [docker registry](https://registry.hub.docker.com/):
 
 - [`latest`, `1.4.200` (*1.4.200/Dockerfile*)](1.4.200/Dockerfile)
+- [H2 Archive Downloads](https://www.h2database.com/html/download-archive.html)
 
 ## Running
 
