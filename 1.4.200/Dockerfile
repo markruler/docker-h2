@@ -22,9 +22,9 @@ RUN mkdir -p ${DATA_DIR}
 
 COPY h2.server.properties /root/.h2.server.properties
 
-EXPOSE 81 1521
+EXPOSE 8080 9092
 
 CMD java -cp /opt/h2/bin/h2*.jar org.h2.tools.Server \
- 	-web -webAllowOthers -webPort 81 \
- 	-tcp -tcpAllowOthers -tcpPort 1521 \
+ 	-web -webAllowOthers -webPort 8080 \
+ 	-tcp -tcpAllowOthers -tcpPort 9092 \
  	-baseDir ${DATA_DIR} ${H2_OPTIONS}
